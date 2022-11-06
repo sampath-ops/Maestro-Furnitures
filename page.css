@@ -1,0 +1,128 @@
+@charset "utf-8";
+/* CSS Document */
+*
+{
+	padding: 0;
+	margin: 0;
+}
+body{
+	font-size: 100%;
+	box-sizing: border-box;
+	font-family: "sans-serif";
+}
+
+.nav_container{
+	background: black;
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+    padding: 20px;
+	top: 0px;
+    position: sticky;
+}
+.nav_menus{
+	display: grid;
+    grid-template-columns: repeat(6,auto);
+    column-gap: 50px;
+	align-items: center;
+	justify-self: center;
+}
+.nav_menus > a{
+	text-decoration: none;
+    list-style: none;
+    color: white;
+	font-weight: 600;
+}
+.nav_icons{
+	justify-self: end;
+}
+.nav_icons > img{
+	padding: 10px;
+}
+.hero{
+	background-image: url(./images/Banner.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.hero_title{
+	color: white;
+	font-size: 35px;
+	line-height: 45px;
+}
+.welcome{
+	display: flex;
+    padding: 20px;
+}
+.welcome_content{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+	padding: 20px;
+}
+.welcome_content > h2{
+    font-size: 25px;
+    font-weight: 600;
+    opacity: 0.8;
+	text-align: center;
+}
+.welcome_content > h1{
+	text-align: center;
+	margin-top: 8px;
+}
+.welcome_content > p{
+	opacity: 0.8;
+    padding-top: 25px;
+    line-height: 24px;
+	text-align: justify;
+}
+.popular{
+	margin: 20px;
+	margin-bottom: 50px;
+}
+.popular_title{
+	text-align: center;
+}
+.popular_quote{
+	text-align: center;
+	font-weight: 500;
+	font-size: 20px;
+    opacity: 0.7;
+	margin-top: 20px;
+}
+.popular_images_container{
+	display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+	margin: 20px 0;
+}
+.popular_card{
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+	border-radius: 15px;
+}
+.popular_card > img{
+	border-radius: 15px 15px 0 0;
+}
+.product_shortdesc{
+	padding: 20px;
+    text-align: center;
+}
+.prod_name{
+	margin-bottom: 8px;
+}
+.start_price{
+	color: crimson;
+}
+.view_all{
+	text-align: center;
+}
+.view_all > button{
+	border: none;
+    background: #ff9a2291;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+}
