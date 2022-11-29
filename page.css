@@ -215,3 +215,58 @@ body{
     padding: 2px 14px;
     border-radius: 6px;
 }
+.footer{
+	background: black;
+    color: white;
+	margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+	padding: 25px;
+	column-gap:30px
+}
+.logo-footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.about-footer > h2,.quick-footer > h2,.contact-footer > h2,.follow-footer > h2{
+	font-size: 18px;
+    color: #f79624;
+    margin-bottom: 25px;
+}
+.about-footer > p{
+	line-height: 25px;
+}
+.quick-links_footer > li{
+	list-style: none;
+	margin-bottom: 8px;
+}
+.footer_phn{
+	display: grid;
+    grid-template-columns: 1fr 10fr;
+}
+.footer_email{
+	display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+.footer_loc{
+	display: grid;
+    grid-template-columns: auto auto;
+	column-gap: 10px;
+}
+.footer_loc > p{
+	line-height: 22px;
+}
+.contact-info-footer{
+	display: grid;
+    row-gap: 8px;
+}
+.social-footer{
+	display: grid;
+    grid-template-columns: repeat(4,auto);
+}
+.copy-right{
+	font-size: 12px;
+    padding: 8px 0;
+}
